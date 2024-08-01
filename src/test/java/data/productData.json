@@ -1,0 +1,10 @@
+[
+
+  {"email" : "tester@dckapcommerce.com",
+    "password":"Dckap@123",
+    "nameOfProduct" : "BMW Car Cover",
+    "skuName" : "AP001BA01",
+    "shortDes": "Car Cover",
+    "longDes": "Premium Quality Car Cover"
+  }
+]
