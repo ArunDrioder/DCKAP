@@ -54,25 +54,21 @@ public class AddProductPage extends AbstractComponent {
         sku.sendKeys(skuName);
         scrollForElementVisibility(shortDescription);
         shortDescription.sendKeys(shortDes);
-//        scrollForElementVisibility(frameXpath);
-//        waitForFrames(frameXpath);
         driver.switchTo().frame(frameXpath);
         waitFoWebElementToAppear(longDescription);
         longDescription.clear();
         longDescription.sendKeys(longDes);
         driver.switchTo().defaultContent();
         scrollForElementVisibility(addProductKitButton);
-        System.out.println("Reached");
         addProductKitButton.click();
-        System.out.println("Clicked");
         waitFoWebElementToAppear(selectAllProduct);
         selectAllProduct.click();
         saveProductKitButton.click();
         scrollForElementVisibility(saveProductBtn);
+        waitForElementToBeClickable(saveProductBtn);
+        clickOnElement(saveProductBtn);
 
-        Thread.sleep(2000);
 
-        saveProductBtn.click();
     }
 
 
